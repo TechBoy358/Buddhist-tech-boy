@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buddhist Tech Boy</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f4f0e7;
+  color:#292929;
+}
+
+/* HEADER */
+header{
+  width:100%;
+  background:#171717;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+}
+
+.logo{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #d7a928;
+  margin-bottom:15px;
+}
+
+header h1{
+  font-size:32px;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+
+header p{
+  color:#d9b957;
+  font-size:14px;
+}
+
+/* NAVIGATION */
+nav{
+  width:100%;
+  background:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+  padding:16px 10px;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold;
+  font-size:15px;
+}
+
+nav a:hover{
+  color:#c49616;
+}
+
+/* MAIN */
+main{
+  width:100%;
+  max-width:1100px;
+  margin:auto;
+  padding:55px 20px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:30px 10px 45px;
+}
+
+.badge{
+  display:inline-block;
+  background:#ead68d;
+  color:#675319;
+  padding:9px 18px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.hero h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#666;
+  font-size:17px;
+  line-height:1.7;
+}
+
+/* SEARCH */
+.search{
+  max-width:650px;
+  margin:25px auto 50px;
+}
+
+.search input{
+  width:100%;
+  padding:17px 22px;
+  border:none;
+  border-radius:40px;
+  background:white;
+  box-shadow:0 5px 20px rgba(0,0,0,.10);
+  font-size:16px;
+  outline:none;
+}
+
+/* SECTION */
+.section-title{
+  font-size:25px;
+  margin-bottom:22px;
+}
+
+/* BOOK CARD */
+.book-card{
+  background:white;
+  max-width:700px;
+  margin:auto;
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 8px 30px rgba(0,0,0,.10);
+}
+
+.book-cover{
+  width:260px;
+  max-width:100%;
+  border-radius:15px;
+  display:block;
+  margin:0 auto 20px;
+  box-shadow:0 8px 20px rgba(0,0,0,.20);
+}
+
+/*
+  Agar apni THE BUDDHA MIND image lagani ho,
+  book-cover.jpg ko isi GitHub repository mein upload karo.
+*/
+
+.book-label{
+  display:inline-block;
+  background:#f0df9e;
+  color:#6b581c;
+  padding:7px 15px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.book-card h3{
+  font-size:27px;
+  margin-bottom:5px;
+}
+
+.hindi-title{
+  color:#a07c16;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.book-card p{
+  color:#666;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  padding:13px 22px;
+  border-radius:10px;
+  font-weight:bold;
+  color:white;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  opacity:.9;
+}
+
+.read{
+  background:#151515;
+}
+
+.download{
+  background:#d7a928;
+}
+
+/* EXPLORE */
+.explore{
+  margin-top:60px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:35px 20px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card .icon{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#777;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* ABOUT */
+.about{
+  margin-top:60px;
+  background:white;
+  border-radius:20px;
+  padding:35px;
+  text-align:center;
+}
+
+.about p{
+  color:#666;
+  line-height:1.8;
+  margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+  background:#171717;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:50px;
+}
+
+footer p{
+  color:#bbb;
+  font-size:14px;
+  margin-top:8px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+  header{
+    padding:28px 15px;
+  }
+
+  header h1{
+    font-size:25px;
+  }
+
+  nav{
+    gap:13px;
+    overflow-x:auto;
+    justify-content:flex-start;
+    padding:14px;
+  }
+
+  nav a{
+    white-space:nowrap;
+    font-size:13px;
+  }
+
+  main{
+    padding:35px 14px;
+  }
+
+  .hero h2{
+    font-size:28px;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .book-card{
+    padding:22px 15px;
+  }
+
+  .book-cover{
+    width:230px;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .section-title{
+    font-size:22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header id="home">
+
+  <!-- Apna logo lagane ke liye logo.jpg upload karo -->
+  <img
+    class="logo"
+    src="logo.jpg"
+    alt="Buddhist Tech Boy Logo"
+  >
+
+  <h1>BUDDHIST TECH BOY</h1>
+
+  <p>Knowledge • Technology • eBooks • Buddha Wisdom</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#home">🏠 Home</a>
+  <a href="#ebooks">📚 eBooks</a>
+  <a href="#buddha">🪷 Buddha</a>
+  <a href="#ai">🤖 AI</a>
+  <a href="#songs">🎵 Songs</a>
+</nav>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+
+  <span class="badge">
+    🪷 WELCOME TO BUDDHIST TECH BOY
+  </span>
+
+  <h2>
+    Explore • Read • Learn • Create
+  </h2>
+
+  <p>
+    eBooks, technology, AI, creative ideas और Buddha wisdom —
+    एक ही जगह!
+  </p>
+
+</section>
+
+
+<!-- SEARCH -->
+<div class="search">
+  <input
+    type="search"
+    id="searchBox"
+    placeholder="🔍 Search eBooks..."
+    onkeyup="searchBooks()"
+  >
+</div>
+
+
+<!-- EBOOK -->
+<section id="ebooks">
+
+  <h2 class="section-title">
+    📚 Featured eBook
+  </h2>
+
+  <div class="book-card" id="buddhaBook">
+
+    <!-- THE BUDDHA MIND COVER -->
+    <img
+      class="book-cover"
+      src="book-cover.jpg"
+      alt="The Buddha Mind"
+    >
+
+    <span class="book-label">
+      📖 HINDI eBOOK
+    </span>
+
+    <h3>
+      THE BUDDHA MIND
+    </h3>
+
+    <div class="hindi-title">
+      बुद्ध-दृष्टि
+    </div>
+
+    <p>
+      THE BUDDHA MIND — बुद्ध-दृष्टि
+    </p>
+
+    <p>
+      इस eBook को online पढ़ें और बुद्ध-दृष्टि के विचारों
+      की यात्रा शुरू करें।
+    </p>
+
+    <div class="buttons">
+
+      <!-- अपना online reading page/link यहां लगाएं -->
+      <a
+        class="btn read"
+        href="read.html"
+      >
+        📖 Read Online
+      </a>
+
+      <!-- अपनी PDF का नाम THE-BUDDHA-MIND.pdf रखें -->
+      <a
+        class="btn download"
+        href="THE-BUDDHA-MIND.pdf"
+        download
+      >
+        ⬇️ Download PDF
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EXPLORE MORE -->
+<section class="explore" id="buddha">
+
+  <h2 class="section-title">
+    ✨ Explore More
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="icon">🪷</div>
+
+      <h3>Buddha Wisdom</h3>
+
+      <p>
+        बुद्ध के विचार और प्रेरणादायक ज्ञान
+      </p>
+
+    </div>
+
+
+    <div class="card" id="ai">
+
+      <div class="icon">🤖</div>
+
+      <h3>AI & Gemini</h3>
+
+      <p>
+        AI और नई technology से जुड़ी जानकारी
+      </p>
+
+    </div>
+
+
+    <div class="card" id="songs">
+
+      <div class="icon">🎵</div>
+
+      <h3>Songs</h3>
+
+      <p>
+        Buddhist और inspirational songs
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about">
+
+  <h2>🪷 About Buddhist Tech Boy</h2>
+
+  <p>
+    यहाँ आपको eBooks, technology, Artificial Intelligence,
+    creative ideas और Buddha wisdom से जुड़ी सामग्री मिलेगी।
+  </p>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <h3>🪷 BUDDHIST TECH BOY</h3>
+
+  <p>
+    Knowledge • Technology • Wisdom
+  </p>
+
+  <p>
+    © 2026 Buddhist Tech Boy
+  </p>
+
+</footer>
+
+
+<script>
+
+/* SEARCH FUNCTION */
+
+function searchBooks(){
+
+  let input =
+    document.getElementById("searchBox")
+    .value
+    .toLowerCase();
+
+  let book =
+    document.getElementById("buddhaBook");
+
+  let text =
+    book.innerText.toLowerCase();
+
+  if(text.includes(input)){
+
+    book.style.display = "block";
+
+  }else{
+
+    book.style.display = "none";
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
