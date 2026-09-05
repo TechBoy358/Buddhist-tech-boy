@@ -4,253 +4,220 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The Buddha Mind | Buddhist Tech Boy</title>
+<title>Buddhist Tech Boy</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-body {
-    font-family: Arial, "Noto Sans Devanagari", sans-serif;
-    background: #f5f0e7;
-    color: #292929;
-    line-height: 1.6;
+body{
+    font-family:Arial, "Noto Sans Devanagari", sans-serif;
+    background:#f5f0e7;
+    color:#292929;
+    line-height:1.6;
 }
 
 /* HEADER */
-header {
-    background: #171717;
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
+header{
+    background:#171717;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 12px;
+.logo{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    margin-bottom:12px;
 }
 
-header h1 {
-    font-size: 34px;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
+header h1{
+    font-size:30px;
+    letter-spacing:1px;
+    margin-bottom:5px;
 }
 
-header p {
-    color: #e0bd4f;
-    font-size: 17px;
+header p{
+    color:#e0bd4f;
+    font-size:16px;
 }
 
 /* NAVIGATION */
-nav {
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-    padding: 15px 10px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+nav{
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    padding:14px 10px;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:15px;
 }
 
-nav a:hover {
-    color: #c49a16;
+nav a:hover{
+    color:#c49a16;
 }
 
 /* MAIN */
-main {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
+main{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:45px 18px;
 }
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 30px 10px 50px;
+.hero{
+    text-align:center;
+    margin-bottom:35px;
 }
 
-.hero h2 {
-    font-size: 42px;
-    color: #5c3b20;
-    margin-bottom: 10px;
+.hero h2{
+    font-size:32px;
+    margin-bottom:10px;
 }
 
-.hero p {
-    font-size: 20px;
-    color: #666;
+.hero p{
+    color:#666;
+    font-size:17px;
 }
 
-/* BOOK COVER */
-.book-card {
-    background: white;
-    max-width: 650px;
-    margin: 0 auto 45px;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
-    text-align: center;
+/* PDF CARD */
+.pdf-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.10);
 }
 
-.book-card img {
-    width: 100%;
-    max-width: 550px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: auto;
+.pdf-card h2{
+    text-align:center;
+    margin-bottom:18px;
+    font-size:24px;
 }
 
-.book-title {
-    margin-top: 18px;
-    font-size: 26px;
-    color: #5c3b20;
-    font-weight: bold;
+/* PDF PREVIEW */
+.pdf-preview{
+    width:100%;
+    height:700px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    background:#eee;
 }
 
-/* PDF SECTION */
-.pdf-section {
-    margin-top: 30px;
-    text-align: center;
+.pdf-preview iframe{
+    width:100%;
+    height:100%;
+    border:none;
 }
 
-.pdf-section h2 {
-    font-size: 32px;
-    color: #5c3b20;
-    margin-bottom: 8px;
+/* BUTTONS */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
 }
 
-.pdf-section p {
-    color: #777;
-    margin-bottom: 20px;
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    background:#171717;
+    color:white;
 }
 
-.pdf-preview {
-    width: 100%;
-    background: white;
-    border: 2px solid #ddd;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-}
-
-.pdf-preview iframe {
-    display: block;
-    width: 100%;
-    height: 750px;
-    border: none;
-}
-
-/* BUTTON */
-.pdf-button {
-    display: inline-block;
-    margin-top: 22px;
-    padding: 14px 28px;
-    background: #171717;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.pdf-button:hover {
-    background: #c49a16;
-    color: #111;
+.btn:hover{
+    background:#c49a16;
 }
 
 /* ABOUT */
-.about {
-    margin-top: 60px;
-    background: white;
-    padding: 35px 25px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+.about{
+    margin-top:35px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 18px rgba(0,0,0,0.08);
 }
 
-.about h2 {
-    color: #5c3b20;
-    margin-bottom: 15px;
+.about h2{
+    margin-bottom:10px;
 }
 
 /* FOOTER */
-footer {
-    margin-top: 60px;
-    background: #171717;
-    color: white;
-    text-align: center;
-    padding: 30px 15px;
+footer{
+    background:#171717;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
 }
 
-footer p {
-    margin: 5px 0;
+footer p{
+    margin:5px;
 }
 
-.gold {
-    color: #e0bd4f;
+.gold{
+    color:#e0bd4f;
 }
 
 /* MOBILE */
-@media (max-width: 700px) {
+@media(max-width:700px){
 
-    header {
-        padding: 25px 10px;
+    header{
+        padding:25px 12px;
     }
 
-    .logo {
-        width: 110px;
-        height: 110px;
+    .logo{
+        width:90px;
+        height:90px;
     }
 
-    header h1 {
-        font-size: 25px;
+    header h1{
+        font-size:24px;
     }
 
-    nav {
-        gap: 14px;
-        flex-wrap: wrap;
+    nav{
+        gap:15px;
+        overflow-x:auto;
+        justify-content:flex-start;
+        white-space:nowrap;
     }
 
-    nav a {
-        font-size: 14px;
+    main{
+        padding:30px 12px;
     }
 
-    main {
-        padding: 30px 12px;
+    .hero h2{
+        font-size:25px;
     }
 
-    .hero h2 {
-        font-size: 30px;
+    .pdf-card{
+        padding:12px;
     }
 
-    .hero p {
-        font-size: 17px;
-    }
-
-    .pdf-preview iframe {
-        height: 600px;
-    }
-
-    .about {
-        padding: 25px 18px;
+    .pdf-preview{
+        height:550px;
     }
 }
 </style>
@@ -261,13 +228,12 @@ footer p {
 <!-- HEADER -->
 <header>
 
-    <img src="logo.jpg"
-         alt="Buddhist Tech Boy Logo"
-         class="logo">
+    <!-- Tumhara logo -->
+    <img src="logo.jpg" class="logo" alt="Buddhist Tech Boy Logo">
 
     <h1>BUDDHIST TECH BOY</h1>
 
-    <p>Technology • Wisdom • Buddhist Thought</p>
+    <p>ज्ञान • ध्यान • तकनीक</p>
 
 </header>
 
@@ -276,92 +242,74 @@ footer p {
 <nav>
 
     <a href="#home">Home</a>
-
     <a href="#book">Book</a>
-
-    <a href="#pdf">PDF</a>
-
     <a href="#about">About</a>
 
 </nav>
 
 
-<!-- MAIN CONTENT -->
-<main>
+<!-- MAIN -->
+<main id="home">
 
-    <!-- HOME -->
-    <section id="home" class="hero">
+    <!-- HERO -->
+    <section class="hero">
 
-        <h2>THE BUDDHA MIND</h2>
+        <h2>The Buddha Mind</h2>
 
         <p>
-            बुद्ध-दृष्टि
+            पढ़ें, समझें और अपने जीवन में ज्ञान को अपनाएँ।
         </p>
 
     </section>
 
 
-    <!-- BOOK COVER -->
-    <section id="book" class="book-card">
+    <!-- PDF -->
+    <section class="pdf-card" id="book">
 
-        <!--
-        Agar book cover ki image ka naam alag hai
-        to neeche src mein uska exact filename likhna.
-        -->
+        <h2>📖 The Buddha Mind</h2>
 
-        <img
-            src="IMG-20260906-WA0001.jpg"
-            alt="The Buddha Mind Book Cover"
-        >
-
-        <div class="book-title">
-            THE BUDDHA MIND
-        </div>
-
-        <p>
-            बुद्ध-दृष्टि
-        </p>
-
-    </section>
-
-
-    <!-- PDF PREVIEW -->
-    <section id="pdf" class="pdf-section">
-
-        <h2>Read The Buddha Mind</h2>
-
-        <p>
-            नीचे पुस्तक का PDF preview देखें।
-        </p>
-
+        <!-- PDF PREVIEW -->
         <div class="pdf-preview">
 
             <iframe
-                src="buddha-mind.pdf"
+                src="buddha-mind.pdf#toolbar=1&navpanes=0&scrollbar=1"
                 title="The Buddha Mind PDF">
             </iframe>
 
         </div>
 
-        <a
-            href="buddha-mind.pdf"
-            target="_blank"
-            class="pdf-button">
-            📖 Open Full PDF
-        </a>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <a
+                href="buddha-mind.pdf"
+                target="_blank"
+                class="btn">
+                📖 Open PDF
+            </a>
+
+            <a
+                href="buddha-mind.pdf"
+                download
+                class="btn">
+                ⬇️ Download PDF
+            </a>
+
+        </div>
 
     </section>
 
 
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section class="about" id="about">
 
-        <h2>About Buddhist Tech Boy</h2>
+        <h2>About</h2>
 
         <p>
-            Buddhist Tech Boy एक ऐसा प्रयास है जहाँ
-            technology और बुद्ध-दृष्टि को एक साथ समझने
-            और प्रस्तुत करने की कोशिश की जाती है।
+            Welcome to Buddhist Tech Boy.
+            यहाँ ज्ञान, बौद्ध विचार और technology से जुड़ी सामग्री
+            एक ही जगह उपलब्ध कराने का प्रयास है।
         </p>
 
     </section>
@@ -373,16 +321,10 @@ footer p {
 <footer>
 
     <p>
-        <span class="gold">BUDDHIST TECH BOY</span>
+        © 2026 <span class="gold">Buddhist Tech Boy</span>
     </p>
 
-    <p>
-        The Buddha Mind • बुद्ध-दृष्टि
-    </p>
-
-    <p>
-        © 2026 Buddhist Tech Boy
-    </p>
+    <p>ज्ञान • शांति • तकनीक</p>
 
 </footer>
 
