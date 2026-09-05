@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Buddhist Tech Boy</title>
+<title>The Buddha Mind | Buddhist Tech Boy</title>
 
 <style>
 * {
@@ -33,7 +33,7 @@ header {
     height: 150px;
     object-fit: contain;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 header h1 {
@@ -78,27 +78,19 @@ main {
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 70px 20px;
+    padding: 50px 20px;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    margin-bottom: 60px;
-}
-
-.badge {
-    display: inline-block;
-    background: #f0d879;
-    padding: 10px 25px;
-    border-radius: 30px;
-    font-weight: bold;
-    margin-bottom: 25px;
+    padding: 30px 10px 50px;
 }
 
 .hero h2 {
     font-size: 42px;
-    margin-bottom: 20px;
+    color: #5c3b20;
+    margin-bottom: 10px;
 }
 
 .hero p {
@@ -106,137 +98,114 @@ main {
     color: #666;
 }
 
-/* SEARCH */
-.search-box {
-    margin: 40px auto;
-    max-width: 700px;
-}
-
-.search-box input {
-    width: 100%;
-    padding: 20px 25px;
-    border: none;
-    border-radius: 40px;
-    font-size: 18px;
-    outline: none;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.10);
-}
-
-/* EBOOK CARD */
-.section-title {
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
+/* BOOK COVER */
 .book-card {
     background: white;
-    border-radius: 30px;
-    padding: 35px 25px;
+    max-width: 650px;
+    margin: 0 auto 45px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
     text-align: center;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-.book-cover {
-    width: 280px;
-    max-width: 90%;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+.book-card img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
-.book-tag {
-    display: inline-block;
-    background: #f1d46b;
-    padding: 8px 18px;
-    border-radius: 25px;
+.book-title {
+    margin-top: 18px;
+    font-size: 26px;
+    color: #5c3b20;
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
-.book-card h3 {
-    font-size: 34px;
-    margin-bottom: 5px;
+/* PDF SECTION */
+.pdf-section {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.book-card h4 {
-    font-size: 24px;
-    color: #85651d;
+.pdf-section h2 {
+    font-size: 32px;
+    color: #5c3b20;
+    margin-bottom: 8px;
+}
+
+.pdf-section p {
+    color: #777;
     margin-bottom: 20px;
 }
 
-.book-card p {
-    color: #666;
-    font-size: 17px;
-    margin-bottom: 25px;
-}
-
-/* BUTTONS */
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 13px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.read-btn {
-    background: #222;
-    color: white;
-}
-
-.read-btn:hover {
-    background: #444;
-}
-
-.download-btn {
-    background: #e2bd3e;
-    color: #222;
-}
-
-.download-btn:hover {
-    background: #d2aa2e;
-}
-
-/* PDF READER */
-.reader {
-    margin-top: 50px;
-    display: none;
-}
-
-.reader h2 {
-    margin-bottom: 15px;
-}
-
-.pdf-frame {
+.pdf-preview {
     width: 100%;
-    height: 850px;
-    border: none;
-    border-radius: 15px;
     background: white;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    border: 2px solid #ddd;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+}
+
+.pdf-preview iframe {
+    display: block;
+    width: 100%;
+    height: 750px;
+    border: none;
+}
+
+/* BUTTON */
+.pdf-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 14px 28px;
+    background: #171717;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pdf-button:hover {
+    background: #c49a16;
+    color: #111;
+}
+
+/* ABOUT */
+.about {
+    margin-top: 60px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.about h2 {
+    color: #5c3b20;
+    margin-bottom: 15px;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 70px;
+    margin-top: 60px;
     background: #171717;
     color: white;
     text-align: center;
-    padding: 35px 15px;
+    padding: 30px 15px;
 }
 
 footer p {
-    color: #bbb;
+    margin: 5px 0;
+}
+
+.gold {
+    color: #e0bd4f;
 }
 
 /* MOBILE */
@@ -246,19 +215,18 @@ footer p {
         padding: 25px 10px;
     }
 
-    header h1 {
-        font-size: 27px;
+    .logo {
+        width: 110px;
+        height: 110px;
     }
 
-    header p {
-        font-size: 14px;
+    header h1 {
+        font-size: 25px;
     }
 
     nav {
-        gap: 13px;
-        justify-content: flex-start;
-        overflow-x: auto;
-        white-space: nowrap;
+        gap: 14px;
+        flex-wrap: wrap;
     }
 
     nav a {
@@ -266,27 +234,23 @@ footer p {
     }
 
     main {
-        padding: 45px 15px;
+        padding: 30px 12px;
     }
 
     .hero h2 {
-        font-size: 31px;
+        font-size: 30px;
     }
 
     .hero p {
         font-size: 17px;
     }
 
-    .book-card h3 {
-        font-size: 27px;
+    .pdf-preview iframe {
+        height: 600px;
     }
 
-    .book-card h4 {
-        font-size: 21px;
-    }
-
-    .pdf-frame {
-        height: 650px;
+    .about {
+        padding: 25px 18px;
     }
 }
 </style>
@@ -297,180 +261,109 @@ footer p {
 <!-- HEADER -->
 <header>
 
-    <!-- Agar logo.png upload kiya hai to yeh automatically logo dikhayega -->
-    <img
-        src="logo.png"
-        class="logo"
-        alt="Buddhist Tech Boy Logo"
-        onerror="this.style.display='none'"
-    >
+    <img src="logo.jpg"
+         alt="Buddhist Tech Boy Logo"
+         class="logo">
 
     <h1>BUDDHIST TECH BOY</h1>
 
-    <p>
-        Knowledge • Technology • eBooks • Buddha Wisdom
-    </p>
+    <p>Technology • Wisdom • Buddhist Thought</p>
 
 </header>
 
 
 <!-- NAVIGATION -->
 <nav>
-    <a href="#home">🏠 Home</a>
-    <a href="#ebooks">📚 eBooks</a>
-    <a href="#buddha">🪷 Buddha</a>
-    <a href="#ai">🤖 AI</a>
-    <a href="#songs">🎵 Songs</a>
+
+    <a href="#home">Home</a>
+
+    <a href="#book">Book</a>
+
+    <a href="#pdf">PDF</a>
+
+    <a href="#about">About</a>
+
 </nav>
 
 
-<!-- MAIN -->
-<main id="home">
+<!-- MAIN CONTENT -->
+<main>
 
-    <!-- HERO -->
-    <section class="hero">
+    <!-- HOME -->
+    <section id="home" class="hero">
 
-        <div class="badge">
-            🪷 WELCOME TO BUDDHIST TECH BOY
-        </div>
-
-        <h2>
-            Explore • Read • Learn • Create
-        </h2>
+        <h2>THE BUDDHA MIND</h2>
 
         <p>
-            eBooks, technology, AI, creative ideas और Buddha wisdom —
-            एक ही जगह!
+            बुद्ध-दृष्टि
         </p>
 
-        <!-- SEARCH -->
-        <div class="search-box">
-            <input
-                type="search"
-                id="search"
-                placeholder="🔍 Search eBooks..."
-                onkeyup="searchBooks()"
-            >
+    </section>
+
+
+    <!-- BOOK COVER -->
+    <section id="book" class="book-card">
+
+        <!--
+        Agar book cover ki image ka naam alag hai
+        to neeche src mein uska exact filename likhna.
+        -->
+
+        <img
+            src="IMG-20260906-WA0001.jpg"
+            alt="The Buddha Mind Book Cover"
+        >
+
+        <div class="book-title">
+            THE BUDDHA MIND
         </div>
+
+        <p>
+            बुद्ध-दृष्टि
+        </p>
 
     </section>
 
 
-    <!-- EBOOKS -->
-    <section id="ebooks">
+    <!-- PDF PREVIEW -->
+    <section id="pdf" class="pdf-section">
 
-        <h2 class="section-title">
-            📚 Featured eBook
-        </h2>
+        <h2>Read The Buddha Mind</h2>
 
+        <p>
+            नीचे पुस्तक का PDF preview देखें।
+        </p>
 
-        <div class="book-card" id="buddhaBook">
+        <div class="pdf-preview">
 
-            <!-- PDF ka cover image -->
-            <!-- Agar cover.jpg upload karoge to cover yahan dikhega -->
-            <img
-                src="cover.jpg"
-                class="book-cover"
-                alt="The Buddha Mind"
-                onerror="this.style.display='none'"
-            >
-
-            <div class="book-tag">
-                📖 HINDI eBOOK
-            </div>
-
-            <h3>
-                THE BUDDHA MIND
-            </h3>
-
-            <h4>
-                बुद्ध-दृष्टि
-            </h4>
-
-            <p>
-                THE BUDDHA MIND — बुद्ध-दृष्टि
-            </p>
-
-            <p>
-                इस eBook को online पढ़ें और बुद्ध-दृष्टि
-                के विचारों की यात्रा शुरू करें।
-            </p>
-
-
-            <div class="buttons">
-
-                <button
-                    class="btn read-btn"
-                    onclick="openReader()"
-                >
-                    📖 Read Online
-                </button>
-
-                <a
-                    class="btn download-btn"
-                    href="THE%20BUDDHA%20MIND%20-%20%E0%A4%AC%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7-%E0%A4%A6%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%9F.pdf"
-                    download
-                >
-                    ⬇️ Download PDF
-                </a>
-
-            </div>
+            <iframe
+                src="buddha-mind.pdf"
+                title="The Buddha Mind PDF">
+            </iframe>
 
         </div>
+
+        <a
+            href="buddha-mind.pdf"
+            target="_blank"
+            class="pdf-button">
+            📖 Open Full PDF
+        </a>
 
     </section>
 
 
-    <!-- PDF READER -->
-    <section class="reader" id="reader">
+    <!-- ABOUT -->
+    <section id="about" class="about">
 
-        <h2>
-            📖 THE BUDDHA MIND — बुद्ध-दृष्टि
-        </h2>
+        <h2>About Buddhist Tech Boy</h2>
 
-        <iframe
-            class="pdf-frame"
-            src="THE%20BUDDHA%20MIND%20-%20%E0%A4%AC%E0%A5%81%E0%A4%A6%E0%A5%8D%E0%A4%A7-%E0%A4%A6%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%9F.pdf"
-            title="The Buddha Mind PDF"
-        ></iframe>
+        <p>
+            Buddhist Tech Boy एक ऐसा प्रयास है जहाँ
+            technology और बुद्ध-दृष्टि को एक साथ समझने
+            और प्रस्तुत करने की कोशिश की जाती है।
+        </p>
 
-    </section>
-
-
-    <!-- OTHER SECTIONS -->
-    <section id="buddha" style="margin-top:70px;">
-        <h2 class="section-title">🪷 Buddha</h2>
-
-        <div class="book-card">
-            <p>
-                बुद्ध के विचार, धम्म, ध्यान और जीवन-दृष्टि
-                से जुड़े लेख और सामग्री यहाँ उपलब्ध होगी।
-            </p>
-        </div>
-    </section>
-
-
-    <section id="ai" style="margin-top:50px;">
-        <h2 class="section-title">🤖 AI & Technology</h2>
-
-        <div class="book-card">
-            <p>
-                AI, technology और digital creativity से
-                जुड़ी नई सामग्री जल्द यहाँ जोड़ी जाएगी।
-            </p>
-        </div>
-    </section>
-
-
-    <section id="songs" style="margin-top:50px;">
-        <h2 class="section-title">🎵 Songs</h2>
-
-        <div class="book-card">
-            <p>
-                Buddhist और inspirational songs यहाँ
-                जोड़े जा सकते हैं।
-            </p>
-        </div>
     </section>
 
 </main>
@@ -478,53 +371,20 @@ footer p {
 
 <!-- FOOTER -->
 <footer>
-    <h3>☸ BUDDHIST TECH BOY</h3>
 
     <p>
-        Knowledge • Technology • Wisdom
+        <span class="gold">BUDDHIST TECH BOY</span>
     </p>
 
-    <p style="margin-top:10px;">
+    <p>
+        The Buddha Mind • बुद्ध-दृष्टि
+    </p>
+
+    <p>
         © 2026 Buddhist Tech Boy
     </p>
+
 </footer>
-
-
-<script>
-
-/* OPEN PDF READER */
-function openReader() {
-
-    const reader = document.getElementById("reader");
-
-    reader.style.display = "block";
-
-    reader.scrollIntoView({
-        behavior: "smooth"
-    });
-}
-
-
-/* SEARCH EBOOK */
-function searchBooks() {
-
-    const search =
-        document.getElementById("search").value.toLowerCase();
-
-    const book =
-        document.getElementById("buddhaBook");
-
-    const text =
-        book.innerText.toLowerCase();
-
-    if (text.includes(search)) {
-        book.style.display = "block";
-    } else {
-        book.style.display = "none";
-    }
-}
-
-</script>
 
 </body>
 </html>
